@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Play, Star, TrendingUp, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
 
+const year = new Date().getFullYear();
+
 const categories = [
     { id: 'educational', name: 'Educational', color: 'bg-blue-400', emoji: '📚' },
     { id: 'music', name: 'Music', color: 'bg-pink-400', emoji: '🎵' },
@@ -150,7 +152,7 @@ export default function HomePage() {
             <footer className="bg-gradient-to-r from-purple-600 to-pink-600 mt-12 py-8">
                 <div className="container mx-auto px-4 text-center text-white">
                     <p className="text-2xl mb-4">🌟 Made with love for awesome kids! 🌟</p>
-                    <p className="text-sm">© 2025 MiniTube - Safe & Fun Videos for Children</p>
+                    <p className="text-sm">© {year} MiniTube - Safe & Fun Videos for Children</p>
                 </div>
             </footer>
         </div>
