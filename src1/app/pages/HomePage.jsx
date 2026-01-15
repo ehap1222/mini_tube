@@ -2,7 +2,6 @@ import { Header } from '../components/Header';
 import { Link } from 'react-router-dom';
 import { Play, Star, TrendingUp, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
-
 const year = new Date().getFullYear();
 
 const categories = [
